@@ -33,3 +33,21 @@
 // dog2.bark()
 
 // console.log(dog1, dog2)
+
+const dog = (name, age, breed) => ({
+  name,
+  age,
+  breed,
+  bark() {
+    console.log(`Woof! My name is ${this.name}`)
+  }
+})
+
+const chihuahua = (name, age, breed, aggression) => ({ ...dog(name, age, breed), aggression })
+
+const dog1 = chihuahua('Beef', 2, 'chihuahua', '15%')
+
+console.log(dog1)
+dog1.bark()
+
+// console.log(dog1)
