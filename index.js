@@ -52,29 +52,44 @@
 
 // console.log(dog1)
 
-class Dog {
-  constructor (name, age, breed) {
-    this.name = name
-    this.age = age
-    this.breed = breed
-    // this.bark = function () {
-    //   console.log(`Woof! My name is ${this.name}`)
-    // }
-  }
+// class Dog {
+//   constructor (name, age, breed) {
+//     this.name = name
+//     this.age = age
+//     this.breed = breed
+//     // this.bark = function () {
+//     //   console.log(`Woof! My name is ${this.name}`)
+//     // }
+//   }
 
-  bark () {
-    console.log(`Woof! My name is ${this.name}`)
-  }
-}
+//   bark () {
+//     console.log(`Woof! My name is ${this.name}`)
+//   }
+// }
 
-class Chihuahua extends Dog {
-  constructor (name, age, breed, aggression) {
-    super(name, age, breed)
-    this.aggression = aggression
-  }
-}
+// class Chihuahua extends Dog {
+//   constructor (name, age, breed, aggression) {
+//     super(name, age, breed)
+//     this.aggression = aggression
+//   }
+// }
 
-const dog1 = new Chihuahua('Beef', 2, 'chihuahua', '15%')
+// const dog1 = new Chihuahua('Beef', 2, 'chihuahua', '15%')
 
-dog1.bark()
-console.log(dog1)
+// dog1.bark()
+// console.log(dog1)
+
+// const fs = require('fs')
+
+// const user = {
+//   name: 'John Doe',
+//   age: 47,
+//   email: 'johndoe@gmail.com'
+// }
+
+// fs.writeFile('user.json', JSON.stringify(user), err => console.log(err))
+
+// fs.readFile('user.json', 'utf8', (err, data) => {
+//   if (err) { console.log(err) }
+//   console.log(JSON.parse(data))
+// })
